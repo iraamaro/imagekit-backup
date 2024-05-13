@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "/XXX/XXX/imagekit-backup/backend/imagekit.backup.js",
+            "runtimeExecutable": "/XXX/.asdf/installs/nodejs/16.14.2/bin/node"
+        }
+    ]
+}
