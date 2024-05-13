@@ -13,7 +13,7 @@ class ImageKitOps {
         try {
             let response = imageKit.listFiles({
                 skip: skip,
-                limit: 2,
+                limit: 1000,
                 sort: 'DESC_CREATED'
             })
             return response

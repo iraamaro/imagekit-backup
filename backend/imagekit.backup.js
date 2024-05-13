@@ -24,7 +24,6 @@ const downloadImage = async () => {
                 let skip = 0
                 let checkpoint = true
                 let files = null
-                let commit = null
                 let count = 0
                 while (checkpoint == true) {
                     let response = await imagekitOps.listFiles(skip)
@@ -54,6 +53,12 @@ const downloadImage = async () => {
                         console.info(`CONTAGEM = ${count}`)
                     }
                 }
+                console.info('\n')
+                console.info(`\t📷 IMAGEKIT BACKUP`)
+                console.info(
+                    `\t${new Date().toLocaleString('pt-BR', { hour12: false })}` +
+                    `\n\tFim...\n`
+                )
             }
             else if (method.method.split('-')[0] == 2) {
                 console.warn(`\nEND...\n`)
